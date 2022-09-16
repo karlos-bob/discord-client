@@ -1,4 +1,4 @@
-import Auth from "../pages/Auth/Auth";
+import Auth from "@/pages/Auth/Auth";
 
 const App: React.FC = () => (
   <div className="h-screen">

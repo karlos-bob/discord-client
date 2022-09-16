@@ -27,4 +27,16 @@ module.exports = {
     "react/jsx-props-no-spreading": 0,
     "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
   },
+  settings: {
+    "import/resolver": {
+      alias: {
+        map: [["@", "./src/"]],
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
+      node: {
+        paths: ["src"],
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
+    },
+  },
 };
