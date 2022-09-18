@@ -21,7 +21,7 @@ const QrCodeWithOverlay = ({ className }: QrCodeWithOverlayProps) => {
 };
 
 QrCodeWithOverlay.defaultProps = {
-  className: "",
+  className: ""
 };
 
 export default QrCodeWithOverlay;

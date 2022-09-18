@@ -7,8 +7,9 @@ const people = [
   { id: 2, name: "Kenton Towne" },
   { id: 3, name: "Therese Wunsch" },
   { id: 4, name: "Benedict Kessler" },
-  { id: 5, name: "Katelyn Rohan" },
+  { id: 5, name: "Katelyn Rohan" }
 ];
+
 const Registration: React.FC = () => (
   <FormWrapper className="w-[480px]">
     <div className="text-center mb-3">

@@ -1,5 +1,3 @@
-import clsx from "clsx";
-
 type FormWrapperType = {
   className?: string;
   children?: React.ReactNode;
@@ -23,7 +21,7 @@ const FormWrapper = ({ className, children }: FormWrapperType) => {
 
 FormWrapper.defaultProps = {
   className: "",
-  children: null,
+  children: null
 };
 
 export default FormWrapper;

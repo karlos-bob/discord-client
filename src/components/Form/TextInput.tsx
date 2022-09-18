@@ -59,7 +59,7 @@ TextInput.defaultProps = {
   error: false,
   onBlur: undefined,
   onChange: undefined,
-  onFocus: undefined,
+  onFocus: undefined
 };
 
 export default TextInput;

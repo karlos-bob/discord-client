@@ -2,8 +2,6 @@ import { useState } from "react";
 import { Listbox } from "@headlessui/react";
 import ChevronDown from "@/assets/images/chevron-down.svg";
 
-const a = 1;
-
 type SelectOption = {
   id: number | string;
   name: string;
@@ -14,7 +12,7 @@ type SelectProps = {
   className?: string;
 };
 
-const Select: React.FC = ({ options, className }: SelectProps) => {
+const Select = ({ options, className }: SelectProps) => {
   const [selected, setSelected] = useState(options[0]);
 
   return (
@@ -23,7 +21,7 @@ const Select: React.FC = ({ options, className }: SelectProps) => {
         <Listbox.Button className="flex flex-row relative w-full">
           <span className="basis-2/3">{selected.name}</span>
           <span className="flex">
-            {/* <img src={} alt="chevron-down" /> */}
+            <img src={ChevronDown} alt="chevron-down" />
           </span>
         </Listbox.Button>
         <Listbox.Options>
@@ -39,7 +37,7 @@ const Select: React.FC = ({ options, className }: SelectProps) => {
 };
 
 Select.defaultProps = {
-  className: "",
+  className: ""
 };
 
 export default Select;
